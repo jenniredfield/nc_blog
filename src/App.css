@@ -1,0 +1,127 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(225, 225, 225);
+}
+
+header {
+
+    background: rgb(39, 39, 39);
+    height: 300px;
+    position: relative;
+}
+
+header h1 {
+
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    color: white;
+}
+
+.blog {
+    font-size: 80px;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+header img {
+    width: 100%;
+}
+
+header h1 {
+
+    font-size: 2em;
+    margin: 0;
+
+
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+  
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+}
+
+
+.post-snippet{
+
+    padding: 5px;
+    border-bottom: 1px dotted gray;
+    background: rgba(255, 255, 255, 0.497);
+
+}
+
+.side-bar {
+
+    border-left: 1px dotted gray;
+
+}
+
+.post-wrapper {
+
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+/* .post-wrapper:nth-child(1){
+
+    background: lightgray;
+} */
+
+.grid-1-post {
+    
+    padding: 20px 5px;
+
+}
+
+.grid-1-post > img {
+
+    width: 150px;
+    margin: 0 auto;
+
+}
+
+.grid-2-post {
+    padding: 10px;
+}
+
+.posts-wrapper a {
+    text-decoration: none;
+    color: black;
+}
+
+.posts-wrapper a:hover {
+    color: #C10933;
+}
+
+.links {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links a:first-child {
+    font-size: 20px;
+}
+
+.links > a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+   color: black;
+    text-align: center;
+    padding: 10px 0;
+    
+
+}
+
+.links a:hover {
+    background: rgb(39,39,39);
+    color: white;
+}
