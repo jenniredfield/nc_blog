@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, BrowserRouter as Router, NavLink, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
 class NavBar extends React.Component {
@@ -46,10 +46,9 @@ class NavBar extends React.Component {
                 <div className='links'>
                 <Link  to="/">Home</Link>
                 { this.state.authors.map(author => {
-                    let encodedName = author.replace(' ', "%20");
            
                     return (
-                        <Link to={`/authors/${encodedName}`}>{author}</Link>
+                        <Link to={`/authors/${author}`}>{author}</Link>
                     )
                 })}
                 </div>

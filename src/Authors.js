@@ -8,7 +8,7 @@ class Authors extends React.Component {
         posts: [],
     }
 
-
+    
     componentDidMount () {
         this.fetchPostsByAuthor();
     }
@@ -20,7 +20,7 @@ class Authors extends React.Component {
         return fetch(`https://northcoders-sprints-api.now.sh/api/blog/authors/${this.state.author}`)
           .then((resBuffer) => resBuffer.json())
           .then((res) => {
-        
+                console.log(res)
             this.setState({ 
               posts:  res.posts,
             });
@@ -33,16 +33,17 @@ class Authors extends React.Component {
        
 
       render() {
-         
+       
+            console.log('****************')
             return (
             <div class="postByAuthor-wrapper">
                 <h2>{this.state.author}</h2>
 
              {  this.state.posts.map(post => {
                    return (
-                   <div>
+                   <div className="author-post-div">
                         <h3>{post.title}</h3>
-                        <p>{post.body}</p> 
+                        <p className="author-posts">{post.body}</p> 
                    </div> 
                    )
                    }) }

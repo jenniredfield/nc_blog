@@ -4,14 +4,14 @@ import LatestPosts from './LatestPosts';
 import Post from './Post';
 import Authors from './Authors';
 import NavBar from './NavBar';
-import {Route, BrowserRouter as Router, Link, NavLink} from 'react-router-dom';
+import {Route, BrowserRouter, Link, NavLink} from 'react-router-dom';
 
 
 
 class App extends Component {
   render () {
     return (
-      <Router>
+      <BrowserRouter>
       <div className="App">
         
          <header> <h1 className="blog">Blog</h1> <img src="nc_logo.png" alt='logo'/></header>
@@ -20,14 +20,14 @@ class App extends Component {
                 <section className="main-content">
                   <Route exact path="/" component={LatestPosts}/>
                   <Route path="/posts/:id" component={Post}/>
-                  <Route path="/authors/:name" component={Authors}/>
+                  <Route exact path="/authors/:name" component={Authors}/>
                 </section>
                 <section className="side-bar">
                   <NavBar/>
                 </section>
             </div>
       </div>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
