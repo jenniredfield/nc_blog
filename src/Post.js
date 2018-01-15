@@ -1,6 +1,5 @@
 import React from 'react';
 
-import {Route, BrowserRouter as Router, Link} from 'react-router-dom';
 
 
 
@@ -41,7 +40,7 @@ import {Route, BrowserRouter as Router, Link} from 'react-router-dom';
       return (
           <div className="post-wrapper">
                 <div className="grid-1-post">
-                    <img src={this.state.post.avatarUrl}/>
+                    <img src={this.state.post.avatarUrl} alt={this.state.post.author}/>
                 </div>
                 <div className="grid-2-post">
                     <h2>{this.state.post.author}</h2><span>{this.state.post.createdAt}</span>
