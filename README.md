@@ -8,10 +8,6 @@ Although it's not maintained by the React team at Facebook, React Router is the 
 
 Your task is to implement a simple React blog application with client side routing using React Router and with the dummy data exposed by the provided API.
 
-## Setup
-
-The starter code provided is a fresh project created witht the package `create-react-app`. If you'd rather have a custom webpack configuration, feel free to delete the provided boilerplate code and create your own. The setup from the previous sprint should be good enough to start. Note: you might need to enable the `historyApiFallback` option on the devServer configuration object ([see docs](https://webpack.js.org/configuration/dev-server/#devserver-historyapifallback))
-
 ## Requirements
 
 - It must have a Latest Posts view that shows a list of posts with their titles, author and date. Each post must link to its own Post view.
@@ -19,7 +15,21 @@ The starter code provided is a fresh project created witht the package `create-r
 - It must have an Author view that lists all the posts written by a specific author. Author pages must be accessible on a prametric route like `/authors/:name`
 - It must have a custom 404 route for resources that are not found.
 - It must be consistently styled with a CSS framework of your choice
-- It must fetch data from [this API](https://github.com/northcoders/react-router-blog-api/blob/master/README.md) (follow link for documentation)
+- It must fetch data from the sprints API: [https://northcoders-sprints-api.now.sh/api/blog](https://northcoders-sprints-api.now.sh/api/blog)
+
+### Endpoints
+
+`GET /posts`
+Responds with an array of 10 posts.
+Accetps a query string `page` for pagination. Defaults to 0.
+
+`GET /posts/:id`
+Responds with a single post, including the body and more data on the author
+
+`GET /authors/:author_name`
+Responds with an array of 10 posts by the specified author.
+The author_name parameter needs to be URI encoded.
+Accetps a query string `page` for pagination. Defaults to 0.
 
 ## Advanced Requirements
 
