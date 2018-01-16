@@ -15,7 +15,7 @@ class App extends Component {
         <div className="App">
 
           <header> <div className="blog"><h1>Blog</h1>
-          <p>Created by Jen &amp; and Megan</p></div> <img src="https://northcoders.com/images/logos/learn_to_code_manchester_rw_second.png" alt='logo' /></header>
+          <p>Created by Jen &amp;&amp; Megan</p></div> <img src="https://northcoders.com/images/logos/learn_to_code_manchester_rw_second.png" alt='logo' /></header>
 
           <div className="wrapper">
             <section className="main-content">
