@@ -4,7 +4,7 @@ import LatestPosts from './LatestPosts';
 import Post from './Post';
 import Authors from './Authors';
 import NavBar from './NavBar';
-import {Route, BrowserRouter, Link, NavLink} from 'react-router-dom';
+import {Route, Switch, BrowserRouter, Link, NavLink} from 'react-router-dom';
 
 
 
@@ -18,9 +18,12 @@ class App extends Component {
          
             <div className="wrapper">
                 <section className="main-content">
-                  <Route exact path="/" component={LatestPosts}/>
-                  <Route path="/posts/:id" component={Post}/>
-                  <Route exact path="/authors/:name" component={Authors}/>
+                  {/* <Switch> */}
+                    <Route exact path="/" component={LatestPosts}/>
+                    <Route path="/posts/:id" component={Post}/>
+                    <Route exact path="/authors/:name" component={Authors}/>
+                  {/* </Switch> */}
+                  {/* <Route  component={PageNotFound}/> */}
                 </section>
                 <section className="side-bar">
                   <NavBar/>

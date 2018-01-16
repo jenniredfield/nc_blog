@@ -17,6 +17,7 @@ class Authors extends React.Component {
     fetchPostsByAuthor = () => {
 
 
+
         return fetch(`https://northcoders-sprints-api.now.sh/api/blog/authors/${this.state.author}`)
           .then((resBuffer) => resBuffer.json())
           .then((res) => {
@@ -34,7 +35,7 @@ class Authors extends React.Component {
 
       render() {
        
-            console.log('****************')
+            console.log('****************', this.state.author)
             return (
             <div class="postByAuthor-wrapper">
                 <h2>{this.state.author}</h2>

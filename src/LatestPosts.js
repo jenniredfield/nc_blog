@@ -8,7 +8,7 @@ class LatestPosts extends React.Component {
 
     }
 
-    componentDidMount () {
+    shouldComponentUpdate () {
         this.fetchPosts();
       }
 
