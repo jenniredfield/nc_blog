@@ -15,7 +15,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
 
-          <header> <h1 className="blog">Blog</h1> <img src="nc_logo.png" alt='logo' /></header>
+          <header> <h1 className="blog">Blog</h1> <img src="https://northcoders.com/images/logos/learn_to_code_manchester_rw_second.png" alt='logo' /></header>
 
           <div className="wrapper">
             <section className="main-content">
