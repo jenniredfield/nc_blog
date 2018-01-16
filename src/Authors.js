@@ -1,5 +1,4 @@
 import React from 'react';
-import {Route, BrowserRouter as Router, NavLink, Link} from 'react-router-dom';
 
 class Authors extends React.Component {
 

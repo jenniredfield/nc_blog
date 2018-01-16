@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, BrowserRouter as Router, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 class LatestPosts extends React.Component {
 
