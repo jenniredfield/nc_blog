@@ -8,7 +8,7 @@ class LatestPosts extends React.Component {
 
     }
 
-    shouldComponentUpdate () {
+    componentDidMount () {
         this.fetchPosts();
       }
 
@@ -19,7 +19,7 @@ class LatestPosts extends React.Component {
             return fetch(`https://northcoders-sprints-api.now.sh/api/blog/posts`)
               .then((resBuffer) => resBuffer.json())
               .then((res) => {
-            
+                console.log(res)
                 this.setState({ 
                 
                   posts:  res.posts,
@@ -33,7 +33,7 @@ class LatestPosts extends React.Component {
 
 
      render ()  {
-         
+        
            return <div className="posts-wrapper">
 
            { this.state.posts.map(function(post){

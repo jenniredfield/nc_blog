@@ -45,10 +45,10 @@ class NavBar extends React.Component {
           return (
                 <div className='links'>
                 <Link  to="/">Home</Link>
-                { this.state.authors.map(author => {
+                { this.state.authors.map((author, i) => {
            
                     return (
-                        <Link to={`/authors/${author}`}>{author}</Link>
+                        <Link to={`/authors/${author}`} key={i}>{author}</Link>
                     )
                 })}
                 </div>
