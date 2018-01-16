@@ -51,6 +51,7 @@ class LatestPosts extends React.Component {
     render() {
 
         return <div className="posts-wrapper">
+                 <h2 className="home-title">Latest Posts</h2>
 
             {this.state.posts.map(function (post, i) {
                 return (

@@ -79,7 +79,7 @@ class Authors extends React.Component {
                         </div>
                     )
                 })}
-                <div>
+                <div className="buttons">
                     <button type="submit" value="previous" onClick={this.fetchNextPost} disabled={this.state.page === 0 ? true : false}>Previous</button>
                     <button type="submit" value="next" onClick={this.fetchNextPost} disabled={this.state.page === 9 ? true : false}>Next</button>
                 </div>

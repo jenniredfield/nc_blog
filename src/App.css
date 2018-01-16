@@ -13,18 +13,29 @@ header {
     position: relative;
 }
 
-header h1 {
+.blog {
 
     position: absolute;
     right: 100px;
-    top: 10px;
+    top: 5px;
     color: white;
     margin: 0;
+    transform: rotate(10deg);
+    color: #C10933;
 }
 
-.blog {
-    font-size: 80px;
+.blog h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 70px;
     font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.blog p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
 }
 
 header img {
@@ -111,7 +122,7 @@ header img {
     display: block;
     width: 100%;
     overflow: hidden;
-   color: black;
+    color: black;
     text-align: center;
     padding: 10px 0;
     
@@ -121,4 +132,13 @@ header img {
 .links a:hover {
     background: rgb(39,39,39);
     color: white;
+}
+
+
+.author-post-div {
+
+    background: rgba(255, 255, 255, 0.497);
+    padding: 10px;
+    text-align: justify;
+
 }

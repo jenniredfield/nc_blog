@@ -4,6 +4,14 @@ body {
   font-family: sans-serif;
 }
 
+.home-title {
+  background:   rgb(39,39,39);
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+
+
 .buttons {
  float: right;
 }
@@ -13,6 +21,11 @@ button {
   font-size: 15px;
   background-color: black;
   color: white;
+}
+
+button:focus {
+  outline: none;
+
 }
 
 button:hover {
